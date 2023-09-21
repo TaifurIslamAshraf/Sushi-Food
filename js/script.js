@@ -12,6 +12,14 @@ AOS.init({
     offset: 100,
 });
 
+//mobile header active
+const mobileMenu = document.querySelector(".header__menu-mobile li img")
+const headerMenu = document.querySelector(".header__menu")
+
+mobileMenu.addEventListener("click", ()=>{
+    headerMenu.classList.toggle("active-mobile")
+})
+
 
 const trendingSushis = [
     'Make Sushi',
